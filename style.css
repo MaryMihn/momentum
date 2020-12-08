@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2{
+  margin: 0;
+}
+
+
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: safe center;
+  text-align: center;
+  background-size: cover;
+}
+
+/* .header{
+  position: fixed; 
+  left: 0; top: 0; 
+  margin: 10px;
+  display: flex;
+} */
+
+.bt {
+  position: fixed; 
+  left: 5px; top: 5px; 
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin-right: 10px;
+}
+.bt:hover {
+  filter: grayscale(.8);
+}
+.bt:active,
+.bt:focus {
+  outline: 0;
+}
+.bt:active{
+  transform: scale(1.02)
+}
+
+.time {
+  font-size: 5rem;
+}
+
+.date {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.focus{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.quotation{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin:10px;
+  position: fixed; 
+  left: 0; bottom: 0;   
+}
+.quote {
+  font: 1 rem Georgia, serif;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.quote figcaption,
+.quote blockquote {
+  margin-right: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin-right: 10px;
+}
+.btn:hover {
+  filter: grayscale(.8);
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active{
+  transform: scale(1.02)
+}
+
+@media (max-width: 768px) {
+  .time {
+    font-size: 4rem;
+  }
+  .date {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .focus{
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 0.1rem;
+  }
+  .bt {
+    width: 25px;
+    height: 25px;
+    margin: 0.5px;
+  }
+
+  .quotation{
+    margin: 10px;
+  }
+  .quote {
+    font: 14px Georgia, serif;
+    padding: 10px;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin-right: 10px;
+  }
+  
+  .btn {
+    width: 25px;
+    height: 25px;
+    margin: 0.5px;
+  }
+}
+
+
+.weather{
+  position: fixed; 
+  right: 5px; top: 5px; 
+  color:  rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.city {  
+  font-size: 14px;
+}
+.temperature {    
+  font-size: 14px;
+}
+.weather-icon {
+  font-size: 60px;
+  /* color: #44aadd; */
+}
+.weather-icon:hover {
+  animation: shake 1.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
+
+
+
+ 
+
